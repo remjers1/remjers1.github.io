@@ -688,6 +688,9 @@ background: rgba(16, 75, 227, 1);
 }
 
 @media (max-width: 767.98px) {
+.custom-play-pause {
+display: none;
+}
 .section3__block2-box {
 flex-direction: column;
 }
