@@ -6,344 +6,1001 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="theme-color" content="#181818">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#181818">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="img/Ellipse1.svg">
+    <link rel="icon" href="img/Screenshot_1.png">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ad442307fa.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="slick/slick.css"/>
 <link rel="stylesheet" href="slick/slick-theme.css"/>
-    <title>Project10</title>
+    <title>Накрутка</title>
   </head>
   <body>
 
-<div class="container__start">
-  <div class="section__blog">
-    <div class="blog__row">
-      <div class="box__blog">
-        <div class="box2__blog">
-          <div class="box2__img">
-            <img src="img/Rectangle1.png" alt="background">
-          </div>
-        </div>
-        <div class="box2__blog blog__padding">
-          <div class="box2__title">Дмитрий Валак</div>
-          <div class="box2__text">блог front-end разработчика</div>
-          <div class="box2__contact-img">
-            <a href=""><img src="img/instagram.svg" alt="instagram"></a>
-            <a href=""><img src="img/vk.svg" alt="vk"></a>
-            <a href=""><img src="img/pinterest.svg" alt="printerest"></a>
-          </div>
-        </div>
-      </div>
-      <div class="box__blog blog__padding">
-        <div class="box__two-text">
-Front-end разработчик. Практик верстки сайтов.
-Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
-        </div>
-        <div class="box__two-button">
-          <a class="button" href="">Мои работы</a>
-          <a class="box__two-button2 button" href="">Написать мне</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="wrapper">
-  <header class="header"> 
-   <div class="section__header">
-    <button class="icon-menu"><span></span></button>
-     <div class="section__header-box section__header-box1 menu">
 
-           <ul class="ul111">
-           <li><a href="">Главная</a></li>
-           <li onmouseover="Hover(this);" onmouseleave="HideDiv(this);" onclick="HeadEr(this)" class="li__header"><span class="a-2__header">Статьи <img class="img-head imghead" src="img/Polygon2.svg" alt=""></span>
-            <div class="div__header">
-              <p><a class="a-hoverss" href="">Создание сайтов</a></p>
-              <p><a class="a-hoverss" href="">Интернет-маркетинг</a></p>
-              <p><a class="a-hoverss" href="">Продвижение видео</a></p>
-            </div>
-           </li>
-           <li><a href="">обо мне</a></li>
-           <li><a href="">реклама</a></li>
-         </ul>
-         <ul>
-           <li><a href="">профи</a></li>
-         </ul>
+<style>
+/*SECTION2*/
+.section2 {
+padding: 80px 0;
+}
+.section2__h2 {
+text-align: center;
+color: rgba(28, 28, 29, 1);
+margin-bottom: 30px;
+font-family: "Ruslan Display", sans-serif;
+font-size: 45px;
+line-height: 48.5px;
+}
+.section2__text {
+text-align: center;
+color: rgba(71, 74, 87, 1);
+margin-bottom: 60px;
+}
+.section2__slider {
+}
+.section2_slider-box {
+padding: 25px 20px 30px 20px;
+background-color: rgba(250, 102, 72, 1);
+border: 2px solid rgba(28, 28, 29, 1);
+box-shadow: 0px 4px 0px 0px rgba(32, 32, 32, 1);
+border-radius: 10px;
+max-width: 340px;
+margin: 0px 20px 4px 20px;
+}
+.slider-box-box {
+display: flex;
+align-items: center;
+gap:20px;
+margin-bottom: 15px;
+}
+.slider-box-img {
+}
+.slider-box-img img {
+border-radius: 8px;
+border: 2px solid rgba(28, 28, 29, 1);
+width: 87px;
+}
+.slider-box-h3 {
+font-weight: 700;
+line-height: 24.38px;
+font-size: 20px;
+letter-spacing: 0.5px;
+}
+.slider-box-text {
+font-size: 16px;
+line-height: 19.5px;
+letter-spacing: 0.5px;
+}
+.slick-dots {
+bottom: -60px !important;
+}
+.slick-dots li button{
+border: 2px solid rgba(28, 28, 29, 1);
+border-radius: 50%;
+position: relative;
+padding: 0;
+width: 16px;
+height: 16px;
+}
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 17px;
+  line-height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  width: 16px;
+  height: 16px;
+  content: '•'; /* <-- Вот этот символ */
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slider-box1{
+background-color: rgba(255, 189, 18, 1);
+}
+.slider-box2{
+background-color: rgba(250, 102, 72, 1);
+}
+.slider-box3{
+background-color: rgba(255, 176, 188, 1);
+}
+.slider-box4{
+background-color: rgba(255, 189, 18, 1);
+}
+.slider-box5{
+background-color: rgba(250, 102, 72, 1);
+}
+
+@media(max-width: 991.98px){
+.section2 {
+padding: 50px 0;
+}
+.section2__h2 {
+margin-bottom: 15px;
+font-size: 45px;
+line-height: 48.5px;
+}
+.section2__text {
+margin-bottom: 30px;
+}
+.section2_slider-box {
+padding: 18px 15px 20px 15px;
+max-width: 300px;
+margin: 0px 15px 4px 15px;
+}
+.slider-box-box {
+gap:10px;
+margin-bottom: 10px;
+}
+.slider-box-img {
+max-width: 87px;
+}
+.slider-box-h3 {
+font-weight: 700;
+line-height: 20.38px;
+font-size: 16px;
+}
+.slider-box-text {
+font-size: 14px;
+line-height: 18.5px;
+}
+.slick-dots {
+bottom: -50px !important;
+}
+}
+
+@media(max-width: 767.98px){
+.section2__h2 {
+margin-bottom: 10px;
+font-size: 30px;
+line-height: 33.5px;
+}
+.section2__text {
+margin-bottom: 25px;
+font-size: 16px;
+line-height: 25px;
+padding: 0 15px;
+}
+.section2_slider-box {
+padding: 15px 12px 20px 15px;
+max-width: 300px;
+margin: 0px 15px 4px 15px;
+}
+.slider-box-box {
+gap:10px;
+margin-bottom: 10px;
+}
+.slider-box-img {
+max-width: 87px;
+}
+.slider-box-img img {
+max-width: 60px;
+}
+.slider-box-h3 {
+font-weight: 700;
+line-height: 20.38px;
+font-size: 14px;
+}
+.slider-box-text {
+font-size: 12px;
+line-height: 18.5px;
+}
+}
+
+@media(max-width: 405px) {
+.section2_slider-box {
+min-height: 154px;
+}
+}
+@media(max-width: 359.98px){
+.slider-box-h3 {
+line-height: 15.38px;
+font-size: 13px;
+}
+.slider-box-img img {
+max-width: 50px;
+}
+.slider-box-text {
+font-size: 10px;
+line-height: 15.5px;
+}
+.slider-box-box {
+gap:5px;
+margin-bottom: 10px;
+}
+.section2_slider-box {
+min-height: 144px;
+}
+}
 
 
-         <div class="section__blog section__blog2">
-    <div class="blog__row">
-      <div class="box__blog">
-        <div class="box2__blog">
-          <div class="box2__img">
-            <img style="width: 100%;" src="img/Rectangle1.png" alt="background">
-          </div>
-        </div>
-        <div class="box2__blog blog__padding">
-          <div class="box2__title">Дмитрий Валак</div>
-          <div class="box2__text">блог front-end разработчика</div>
-          <div class="box2__contact-img">
-            <a href=""><img src="img/instagram.svg" alt="instagram"></a>
-            <a href=""><img src="img/vk.svg" alt="vk"></a>
-            <a href=""><img src="img/pinterest.svg" alt="printerest"></a>
-          </div>
-        </div>
-      </div>
-      <div class="box__blog blog__padding">
-        <div class="box__two-text">
-Front-end разработчик. Практик верстки сайтов.
-Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
-        </div>
-        <div class="box__two-button box__two-button22">
-          <a class="button" href="">Мои работы</a>
-          <a class="box__two-button2 button" href="">Написать мне</a>
-        </div>
-      </div>
-    </div>
-  </div>
+/*SECTION3*/
+.section3 {
+background-color: rgba(150, 46, 255, 1);
+padding: 70px 0 50px 0;
+}
+.section3__row {
+display: flex;
+gap:10px;
+align-items: center;
+}
+.section3__box-form {
+flex: 0 1 50%;
+}
+.box-form-form {
+padding: 40px 40px 44px 40px;
+display: flex;
+flex-direction: column;
+gap:17px;
+border: 2px solid rgba(28, 28, 29, 1);
+box-shadow: 0px 8px 0px 0px rgba(32, 32, 32, 1);
+border-radius: 10px;
+max-width: 483px;
+margin-bottom: 4px;
+}
+.form-h3 {
+margin-bottom: 20px;
+color: rgba(250, 102, 72, 1);
+font-weight: 700;
+font-size: 24px;
+}
+.box-form-form input {
+padding: 12px 20px;
+border: 1px solid rgba(28, 28, 29, 1);
+box-shadow: 0px 2px 0px 0px rgba(32, 32, 32, 1);
+border-radius: 10px;
+font-size: 18px;
+color: rgba(28, 28, 29, 1);
+}
+.box-form-form textarea {
+padding: 12px 20px;
+border: 1px solid rgba(28, 28, 29, 1);
+box-shadow: 0px 2px 0px 0px rgba(32, 32, 32, 1);
+border-radius: 10px;
+font-size: 18px;
+color: rgba(28, 28, 29, 1);
+}
+.box-form-form input::placeholder {
+font-size: 18px;
+color: rgba(28, 28, 29, 1);
+font-weight: 500;
+}
+.box-form-form textarea::placeholder {
+font-size: 18px;
+color: rgba(28, 28, 29, 1);
+font-weight: 500;
+}
+.box-form-form button {
+margin-top: 15px;
+font-weight: 900;
+font-size: 16px;
+letter-spacing: 0.45px;
+background-color: rgba(250, 102, 72, 1);
+padding: 17px 0;
+border-radius: 10px;
+border: 1px solid rgba(28, 28, 29, 1);
+box-shadow: 0px 4px 0px 0px rgba(32, 32, 32, 1);
+transition: all 0.2s;
+}
+.box-form-form button:hover {
+background-color: rgba(250, 102, 72, 0.5);
+}
+.box-form-form button:focus {
+background-color: rgba(250, 102, 72, 0.5);
+}
+.section3__box-image {
+flex: 0 1 50%;
+}
+.section3__box-image img {
+	max-width: 100%;
+}
 
-     </div>
-     <div class="section__header-box section__header-box2">
-       <input type="text" placeholder="Поиск по блогу">
-     </div>
-   </nav>
-   </div>
-</header>
-  <main class="main"> 
-    <section class="section1">
-      <div class="container1">
-       <div id="slider" class="section-1-slider">
-         <div class="section1__box">
-          <p>Отдыхаю на природе</p>
-           <img class="lozad" data-src="img/section1/01.png" alt="image">
-           <span>21.09.2020</span>
-         </div>
-         <div class="section1__box">
-           <p>Заканчиваю сложный проект</p>
-           <img class="lozad" data-src="img/section1/02.jpg" alt="image">
-           <span>15.09.2020</span>
-         </div>
-         <div class="section1__box">
-           <p>Переехал в новую квартиру</p>
-           <img class="lozad" data-src="img/section1/03.jpg" alt="image">
-           <span>11.09.2020</span>
-         </div>
-         <div class="section1__box">
-           <p>Осень пришла!</p>
-           <img class="lozad" data-src="img/section1/04.jpg" alt="image">
-           <span>28.08.2020</span>
-         </div>
-         <div class="section1__box">
-           <p>Осень пришла!</p>
-           <img class="lozad" data-src="img/section1/04.jpg" alt="image">
-           <span>28.08.2020</span>
-         </div>
-         <div class="section1__box">
-           <p>Осень пришла!</p>
-           <img class="lozad" data-src="img/section1/04.jpg" alt="image">
-           <span>28.08.2020</span>
-         </div>
-       </div>
-      </div>
-    </section>
-    <section class="section2">
-      <div class="container">
-        <div class="section2__row">
-          <form action="" method="" class="section2__form">
-          <input type="text" placeholder="Напишите мне коментарий">
-          <button class="section2__btn2"><img src="img/section2/02.svg" alt=""></button>
-          </form>
-        <button onclick="triggerFileInput()" class="section2__btn1"><img src="img/section2/01.svg" alt=""></button>
-        <input type="file" id="imageInput" accept="image/*" style="display: none">
-        </div>
-      </div>
-    </section>
-    <section class="section3">
-      <div class="container">
-        <div class="section3__row">
-          <div class="section3__box-block">
-            
+@media (max-width: 767.98px) {
+.section3 {
+padding: 50px 0 40px 0;
+}
+.section3__row {
+flex-direction: column;
+}
+.section3__box-form {
+width: 100%;
+}
+.box-form-form {
+padding: 30px 30px 34px 30px;
+max-width: 100%;
+}
+.form-h3 {
+margin-bottom: 10px;
+font-size: 19px;
+}
+.box-form-form button {
+margin-top: 10px;
+font-size: 15px;
+padding: 14px 0;
+}
+}
 
-              <div class="section3__blocks">
-                <div class="section3__block2-image">
-                  <img class="myImage" src="" alt="">
-                  <div class="myVideo">
-                    <video id="videoElement" controls poster="">
-                    <source src="" type="video/mp4">
-                    </video>
-                    <a onclick="playVideo(this)" class="custom-play-pause"><img src="img/section3/play.svg" alt="image"></a>
-                  </div>
-                </div>
-                <div class="section3__block2-content">
-                  <div class="section3__block2-title"></div>
-                  <div class="section3__block2-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-                  </div>
-                  <div class="section3__block2-box">
-                    <div class="section3__block2-box1">
-                      <div class="section3__block2-time">21.06.2020</div>
-                      <div class="section3__block2-tokha">
-                        <img src="" alt="">
-                      </div>
-                      <div class="section3__block2-tema"></div>
-                    </div>
-                    <div class="section3__block2-box2">
-                      <a class="section3__block2-a" href=""></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="section3__blocks">
-                <div class="section3__block2-image">
-                  <img class="myImage" src="img/section3/01.jpg" alt="">
-                  <div class="myVideo">
-                    <video id="videoElement" controls poster="">
-                    <source src="" type="video/mp4">
-                    </video>
-                    <a onclick="playVideo(this)" class="custom-play-pause"><img src="img/section3/play.svg" alt="image"></a>
-                  </div>
-                </div>
-                <div class="section3__block2-content">
-                  <div class="section3__block2-title">Как писать код быстро и безболезненно?</div>
-                  <div class="section3__block2-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-                  </div>
-                  <div class="section3__block2-box">
-                    <div class="section3__block2-box1">
-                      <div class="section3__block2-time">21.06.2020</div>
-                      <div class="section3__block2-tokha">
-                        <img src="img/section3/tokha.svg" alt=".">
-                      </div>
-                      <div class="section3__block2-tema">создание сайтов</div>
-                    </div>
-                    <div class="section3__block2-box2">
-                      <a class="section3__block2-a" href="">читать</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="section3__blocks">
-                <div class="section3__block2-image">
-                  <img class="myImage" src="" alt="">
-                  <div class="myVideo">
-                    <video id="videoElement" controls poster="img/video/foto1.jpg">
-                    <source src="img/video/v.mp4" type="video/mp4">
-                    </video>
-                    <a onclick="playVideo(this)" class="custom-play-pause"><img src="img/section3/play.svg" alt="image"></a>
-                  </div>
-                </div>
-                <div class="section3__block2-content">
-                  <div class="section3__block2-title">Купил новый ноутбук за 150 000 руб</div>
-                  <div class="section3__block2-text">
-                  </div>
-                  <div class="section3__block2-box">
-                    <div class="section3__block2-box1">
-                      <div class="section3__block2-time">21.06.2020</div>
-                      <div class="section3__block2-tokha">
-                        <img src="img/section3/tokha.svg" alt=".">
-                      </div>
-                      <div class="section3__block2-tema">продвижение видео</div>
-                    </div>
-                    <div class="section3__block2-box2">
-                      <a class="section3__block2-a" href="">оставить комментарий</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+/*SECTION4*/
+.section4 {
+padding: 150px 0 120px 0;
+}
+.section4__h2 {
+margin-bottom: 60px;
+font-family: "Ruslan Display", sans-serif;
+color: rgba(28, 28, 29, 1);
+letter-spacing: 2px;
+line-height: 48.5px;
+font-size: 45px;
+font-weight: 400;
+text-align: center;
+}
+.section4__row {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap:30px;
+}
+.section4__box {
+max-width: 380px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.section4__box2-image {
+max-width: 380px;
+}
+.section4__box2-image img {
+width: 100%;
+width: 100%;
+object-fit: cover;
+border: 2px solid rgba(28, 28, 29, 1);
+box-shadow: 0px 8px 0px 0px rgba(32, 32, 32, 1);
+border-radius: 10px;
+}
+.section4__box2-h3 {
+color: rgba(28, 28, 29, 1);
+letter-spacing: 0.63px;
+line-height: 32px;
+font-weight: 700;
+font-size: 24px;
+margin-top: 20px;
+margin-bottom: 5px;
+}
+.section4__box2-text {
+color: rgba(71, 74, 87, 1);
+line-height: 27px;
+letter-spacing: 0.45px;
+margin-bottom: 15px;
+}
+.section4__box2-team {
+color: rgba(28, 28, 29, 1);
+font-weight: 500;
+letter-spacing: 0.5px;
+}
 
-              <div class="section3__blocks">
-                <div class="section3__block2-image">
-                  <img class="myImage" src="img/section3/02.jpg" alt="">
-                  <div class="myVideo">
-                    <video id="videoElement" controls poster="">
-                    <source src="" type="video/mp4">
-                    </video>
-                    <a onclick="playVideo(this)" class="custom-play-pause"><img src="img/section3/play.svg" alt="image"></a>
-                  </div>
-                </div>
-                <div class="section3__block2-content">
-                  <div class="section3__block2-title">Как я сходил на FrontEnd Conf 2021</div>
-                  <div class="section3__block2-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
-                  </div>
-                  <div class="section3__block2-box">
-                    <div class="section3__block2-box1">
-                      <div class="section3__block2-time">21.06.2020</div>
-                      <div class="section3__block2-tokha">
-                        <img src="img/section3/tokha.svg" alt=".">
-                      </div>
-                      <div class="section3__block2-tema">создание сайтов</div>
-                    </div>
-                    <div class="section3__block2-box2">
-                      <a class="section3__block2-a" href="">читать</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+@media(max-width: 991.98px) {
+.section4 {
+padding: 90px 0 90px 0;
+}
+.section4__h2 {
+margin-bottom: 40px;
+line-height: 44.5px;
+font-size: 40px;
+font-weight: 400;
+}
+.section4__row {
+gap:20px;
+}
+.section4__box2-image {
+max-width: 100%;
+}
+}
 
-          </div>
+@media(max-width: 767.98px) {
+.section4 {
+padding: 70px 0 50px 0;
+}
+.section4__h2 {
+margin-bottom: 40px;
+line-height: 35.5px;
+font-size: 30px;
+font-weight: 400;
+}
+.section4__row {
+gap:20px;
+grid-template-columns: repeat(1, 1fr);
+}
+.section4__box2-h3 {
+line-height: 25px;
+font-size: 19px;
+margin-top: 15px;
+}
+.section4__box2-text {
+line-height: 25px;
+margin-bottom: 5px;
+}
+.section4__box2-team {
+font-size: 16px;
+}
+.section4__box {
+max-width: 100%;
+margin-bottom: 30px;
+}
+}
 
-          <div class="section3__box-pagenav">
-            <div class="box-pagenav_box"><</div>
-            <div class="box-pagenav_box">1</div>
-            <div class="box-pagenav_box">2</div>
-            <div class="box-pagenav_box">3</div>
-            <div class="box-pagenav_box">></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer"> 
-  </footer>
+
+/*SECTION5*/
+.section5 {
+padding: 80px 0px;
+}
+.section5__p {
+font-weight: 500;
+letter-spacing: 0.5px;
+color: rgba(71, 74, 87, 1);
+text-align: center;
+margin-bottom: 15px;
+}
+.section5__h2 {
+color: rgba(28, 28, 29, 1);
+font-family: "Ruslan Display", sans-serif;
+font-size: 45px;
+text-align: center;
+line-height: 45px;
+margin-bottom: 50px;
+}
+.section5__row {
+display: grid;
+gap:30px;
+grid-template-columns: repeat(4, 1fr);
+}
+.section5__box {
+color: rgba(28, 28, 29, 1);
+border: 2px solid rgba(28, 28, 29, 1);
+box-shadow: 0px 8px 0px 0px rgba(32, 32, 32, 1);
+border-radius: 10px;
+margin-bottom: 6px;
+padding: 30px 30px 40px 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.section5__box1 {
+background: rgba(249, 90, 44, 1);
+}
+.section5__box2 {
+background: rgba(27, 219, 196, 1);
+}
+.section5__box3 {
+background: rgba(150, 46, 255, 1);
+}
+.section5__box4 {
+background: rgba(255, 189, 18, 1);
+}
+.section5__box-content {
+}
+.section5__box-content ul li {
+letter-spacing: 0.5px;
+font-weight: 500;
+line-height: 26px;
+}
+.section5__box-content-p {
+letter-spacing: 0.5px;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.section5__box-content-h3 {
+font-size: 30px;
+font-weight: 600;
+margin-bottom: 30px;
+letter-spacing: 0.45px;
+line-height: 45px;
+}
+.section5__box-button {
+}
+.section5-button {
+margin-top: 30px;
+text-align: center;
+border: 1px solid rgba(28, 28, 29, 1);
+box-shadow: 0px 4px 0px 0px rgba(32, 32, 32, 1);
+padding: 17px 0;
+border-radius: 10px;
+background-color: rgba(255, 255, 255, 1);
+line-height: 16px;
+font-size: 16px;
+font-weight: 900;
+transition: all 0.2s;
+cursor: pointer;
+}
+.section5-button:hover {
+background-color: rgba(255, 255, 255, 0.5);
+}
+.section5-button:focus {
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width: 1079.98px){
+.section5__box-content-p {
+margin-bottom: 15px;
+}
+.section5__box-content-h3 {
+font-size: 25px;
+font-weight: 600;
+margin-bottom: 20px;
+}
+}
+
+@media(max-width: 991.98px) {
+.section5 {
+padding: 30px 0px 60px;
+}
+.section5__box {
+padding: 20px 20px 30px 20px;
+}
+.section5__box-content ul li {
+font-size: 16px;
+line-height: 23px;
+}
+.section5__box-content-p {
+margin-bottom: 15px;
+font-size: 18px;
+}
+.section5__box-content-h3 {
+font-size: 20px;
+margin-bottom: 15px;
+line-height: 30px;
+}
+.section5__box-button {
+}
+.section5-button {
+margin-top: 15px;
+padding: 13px 0;
+font-size: 14px;
+}
+.section5__row {
+gap:20px;
+}
+}
+
+@media(max-width: 767.98px){
+.section5__row {
+grid-template-columns: repeat(1, 1fr);
+}
+.section5__box {
+text-align: center;
+}
+.section5__box-content ul li {
+font-size: 18px;
+line-height: 23px;
+}
+.section5__box-content-h3 {
+font-size: 25px;
+}
+.section5__p {
+text-align: center;
+margin-bottom: 15px;
+font-size: 16px;
+}
+.section5__h2 {
+font-size: 30px;
+line-height: 35px;
+margin-bottom: 40px;
+}
+}
+
+
+/*FOOTER*/
+.footer {
+background-color: rgba(119, 17, 221, 1);
+padding: 40px 0;
+}
+.footer__row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.footer__icon {
+}
+.section_header-logo {
+}
+.footer__text {
+}
+.footer__buttons {
+display: flex;
+gap:30px;
+}
+.footer__buttons-color{
+background: rgba(255, 189, 18, 1);
+}
+.fa-tiktok {
+transition: all 0.2s;
+}
+.fa-tiktok:hover {
+color: rgba(144, 144, 144, 1);
+}
+
+@media(max-width: 991px){
+.footer {
+padding: 20px 0;
+}
+.footer__buttons-color{
+padding: 8px 20px;
+}
+.footer__buttons {
+display: flex;
+gap:15px;
+}
+.footer__text {
+font-size: 16px;
+}
+}
+
+@media(max-width: 767.98px){
+.footer__row {
+flex-direction: column;
+}
+.footer__text {
+text-align: center;
+font-size: 14px;
+margin: 10px 0;
+}
+.footer__buttons-color{
+font-size: 10px;
+padding: 5px 10px;
+margin-bottom: 3px;
+}
+}
+
+
+
+
+</style>
+
+
+<div class="wrapper">
+	<header class="header">
+			<div class="container">
+				<div class="header_row">
+				<div class="section__header__box">
+					<a href=""><div class="section_header-logo">BOOST</div></a>
+				</div>
+				<div class="section__header__box">
+					<div class="header__box-mesage">
+						<a href="https://t.me/tt_inst_haker"><i class="fa-brands fa-telegram"></i></a>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.tiktok.com/@_following_laik?_t=8njgT7JaE5d&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+					</div>
+					<div onclick="gamburgerButton(this);" class="gamburger_backgrounf">
+						<div class="gamburger__button">
+			 	       <strong id="main__strong"></strong>
+			            </div>
+					</div>
+		<div class="main__box-gamburger" id="main__box-gamburger">
+			<nav>
+				<ul>
+					<li>
+						<a href="">ГОЛОВНА</a>
+					</li>
+					<li onclick="Clics(this)">
+						<a href="#part1">ВІДГУКИ</a>
+					</li>
+					<li>
+						<a href="#part2">ПИТАННЯ</a>
+					</li>
+					<li>
+						<a href="#part3">ІСТОРІЇ</a>
+					</li>
+					<li>
+						<a href="#part4">ЦІНИ</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+				</div>
+			</div>
+			</div>
+	</header>
+	<main class="main">
+		<section class="section1">
+			<div class="container">
+				<div class="section1__row">
+					<div class="section1__box-content">
+						<h1 class="section1__h1">НАЙКРАЩІЙ СЕРВІС ДЛЯ ПРОСУВАННЯ ВАШОГО ПРОФІЛЮ</h1>
+						<div class="section1__text">
+							Гарантуємо живу акдиторію та вищий клас по просуванню акаунтів. Бистрий старт. Без відписок та банів, працюємо 24/7.
+						</div>
+						<div class="section1__buttons">
+							<a class="section1__buttons-tg button" href="https://t.me/tt_inst_haker"><i class="i_section1 fa-brands fa-telegram"></i><p>Телеграм</p></a>
+							<div class="section1__buttons-price button"><i class="i_section1 fa-solid fa-play"></i><p>Розпочати</p></div>
+						</div>
+					</div>
+					<div class="section1__box-image">
+						<img src="img/section1/01.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="part1" class="section2">
+			<h2 class="section2__h2">ВІДГУКИ ПРО НАС</h2>
+			<div class="section2__text">
+				Наші клієнти завжди задоволені нашою працею, саме тому вони обирають нас.
+			</div>
+			<div class="section2__slider">
+				<div class="section2_slider-box slider-box1">
+					<div class="slider-box-box">
+						<div class="slider-box-img">
+							<img src="img/section2/01.png" alt="foto">
+						</div>	
+						<div class="slider-box-h3">
+							Михайло Зоренко, блогер.
+						</div>
+					</div>
+					<div class="slider-box-text">
+					 Чудовий сервіс, швидко збільшив кількість підписників!
+					</div>
+				</div>
+				
+				<div class="section2_slider-box slider-box2">
+					<div class="slider-box-box">
+						<div class="slider-box-img">
+							<img src="img/section2/02.png" alt="foto">
+						</div>	
+						<div class="slider-box-h3">
+							Олена Степаненко, тіктокерка
+						</div>
+					</div>
+					<div class="slider-box-text">Результат перевершив очікування, рекомендую всім.
+					</div>
+				</div>
+				
+				<div class="section2_slider-box slider-box3">
+					<div class="slider-box-box">
+						<div class="slider-box-img">
+							<img src="img/section2/03.png" alt="foto">
+						</div>	
+						<div class="slider-box-h3">
+							Тарас Коваленко, продавець.
+						</div>
+					</div>
+					<div class="slider-box-text">Швидко, якісно та ефективно, задоволений!
+					</div>
+				</div>
+				
+				<div class="section2_slider-box slider-box4">
+					<div class="slider-box-box">
+						<div class="slider-box-img">
+							<img src="img/section2/04.png" alt="foto">
+						</div>	
+						<div class="slider-box-h3">
+							Наталія Лісова, блогерша.
+						</div>
+					</div>
+					<div class="slider-box-text">Підписники реальні, активність зросла. Я задоволена!
+					</div>
+				</div>
+				
+				<div class="section2_slider-box slider-box5">
+					<div class="slider-box-box">
+						<div class="slider-box-img">
+							<img src="img/section2/05.png" alt="foto">
+						</div>	
+						<div class="slider-box-h3">
+							Василь Гайдук, дропшипер
+						</div>
+					</div>
+					<div class="slider-box-text">Найкращий сервіс накрутки, вартий кожної гривні!
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section id="part2" class="section3">
+			<div class="container">
+				<div class="section3__row">
+					<div class="section3__box-form">
+						<form class="box-form-form" action="" method="POST">
+							<h3 class="form-h3">Задавайте питання</h3>
+							<input name="name" type="name" placeholder="Ваше ім'я">
+							<input name="tel" type="tel" placeholder="Телефон">
+							<textarea name="text" placeholder="Текст"></textarea>
+							<button type="submit">Відправити</button>
+						</form>
+					</div>
+					<div class="section3__box-image">
+						<img src="img/section3/01.png" alt="image">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="part3" class="section4">
+			<div class="container">
+				<h2 class="section4__h2">ІСТОРІЇ НАШИХ КОРИСТУВАЧІВ</h2>
+				<div class="section4__row">
+					<div class="section4__box">
+						<div class="section4__box2-image">
+							<img src="img/section4/11.jpg" alt="image">
+							<h3 class="section4__box2-h3">Історії наших користувачів</h3>
+							<div class="section4__box2-text">
+								Олена завдяки нашим стратегіям набрала мільйон підписників за малий час. 
+							</div>
+						</div>
+                           <div class="section4__box2-team">06.07.2024</div>
+					</div>
+					<div class="section4__box">
+						<div class="section4__box2-image">
+							<img src="img/section4/02.jpg" alt="image">
+							<h3 class="section4__box2-h3">Історії наших користувачів</h3>
+							<div class="section4__box2-text">
+								Тарас за кілька днів став популярним тіктокером завдяки нашим порадам. 
+							</div>
+						</div>
+                           <div class="section4__box2-team">07.07.2024</div>
+					</div>
+					<div class="section4__box">
+						<div class="section4__box2-image">
+							<img src="img/section4/03.jpg" alt="image">
+							<h3 class="section4__box2-h3">Історії наших користувачів</h3>
+							<div class="section4__box2-text">
+								Анна збільшила продажі в своєму магазині завдяки просуванню в Instagram.
+							</div>
+						</div>
+                           <div class="section4__box2-team">08.07.2024</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="part4" class="section5">
+			<div class="container">
+				<p class="section5__p">We have selected the best payment solutions for you.</p>
+				<h2 class="section5__h2">Choose your tariff plan</h2>
+				<div class="section5__row">
+					<div class="section5__box section5__box1">
+						<div class="section5__box-content">
+							<p class="section5__box-content-p">Free Plan</p>
+							<h3 class="section5__box-content-h3">$0 mounth</h3>
+							<ul>
+								<li>5 Email</li>
+								<li>Free Share</li>
+								<li>200 Clients</li>
+								<li>Chat support</li>
+							</ul>
+						</div>
+						<div class="section5__box-button">
+							<div class="section5-button">
+								Розпочати
+							</div>
+						</div>
+					</div>
+					
+					<div class="section5__box section5__box2">
+						<div class="section5__box-content">
+							<p class="section5__box-content-p">Free Plan</p>
+							<h3 class="section5__box-content-h3">$0 mounth</h3>
+							<ul>
+								<li>5 Email</li>
+								<li>Free Share</li>
+								<li>200 Clients</li>
+								<li>Chat support</li>
+							</ul>
+						</div>
+						<div class="section5__box-button">
+							<div class="section5-button">
+								Розпочати
+							</div>
+						</div>
+					</div>
+					
+					<div class="section5__box section5__box3">
+						<div class="section5__box-content">
+							<p class="section5__box-content-p">Free Plan</p>
+							<h3 class="section5__box-content-h3">$0 mounth</h3>
+							<ul>
+								<li>5 Email</li>
+								<li>Free Share</li>
+								<li>200 Clients</li>
+								<li>Chat support</li>
+							</ul>
+						</div>
+						<div class="section5__box-button">
+							<div class="section5-button">
+								Розпочати
+							</div>
+						</div>
+					</div>
+					
+					<div class="section5__box section5__box4">
+						<div class="section5__box-content">
+							<p class="section5__box-content-p">Free Plan</p>
+							<h3 class="section5__box-content-h3">$0 mounth</h3>
+							<ul>
+								<li>5 Email</li>
+								<li>Free Share</li>
+								<li>200 Clients</li>
+								<li>Chat support</li>
+							</ul>
+						</div>
+						<div class="section5__box-button">
+							<div class="section5-button">
+								Розпочати
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<div class="footer__icon">
+					<a href=""><div class="section_header-logo">BOOST</div></a>
+				</div>
+				<div class="footer__text">Дякуємо за те, що обрали саме нас!</div>
+				<div class="footer__buttons">
+					<a class="section1__buttons-tg button footer__buttons-color" href="https://t.me/tt_inst_haker"><i class="i_section1 fa-brands fa-telegram"></i><p>Телеграм</p></a>
+							<div class="section1__buttons-price button footer__buttons-color"><i class="i_section1 fa-solid fa-play"></i><p>Розпочати</p></div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </div>
-</div>
+
+
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="js/script.js"></script>
 <script src="slick/slick.min.js"></script>
 
 
-
-
-<!--SLICK__1-->
+<!--SLICK-->
 <script>
   $(document).ready(function(){
-  $('.section-1-slider').slick({
+  $('.section2__slider').slick({
   /* КОД ДЛЯ СЛАЙДЕРА */
-  infinite: false,
-  slidesToShow: 4,
+  slidesToShow: 3,
   slidesToScroll: 1,
+  centerPadding: '60px',
+  autoplay: true,
+  autoplaySpeed: 2000,
+  centerMode: true,
+  dots: true,
+  draggable: true,
   /*Скорость слайдера*/
   speed: 300,
   /* АДАПТИВНЫЙ СЛАЙДЕР ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ */
   responsive: [
     {
+      breakpoint: 1150,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
       breakpoint: 991,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 767,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     },
     {
       breakpoint: 470,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     }
@@ -354,23 +1011,60 @@ Front-end разработчик. Практик верстки сайтов.
 });
 </script>
 
-
-
-
-<!--LINIWA ZAGRYZKA-->
-<script src="https://cdn.jsdelivr.net/npm/lozad@1.14.0/dist/lozad.min.js"></script>
 <script>
-    // Инициализация библиотеки lozad.js
-    const observer = lozad('.lozad', {
-        loaded: function(el) {
-            // Коллбэк, вызываемый после загрузки каждого изображения
-            el.classList.add('loaded');
-        },
-        threshold: 0.1 // Установка порога видимости для загрузки (0.1 означает, что изображение начнет загружаться, когда оно находится в пределах 10% от видимой области)
+var main_strong = document.getElementById('main__strong');
+var gamburger = document.getElementById('main__box-gamburger');
+var bul = false;
+var nav = gamburger.querySelector('nav');
+
+function gamburgerButton(el) {
+    if (main_strong.classList.contains('main-top')) {
+    	main_strong.classList.remove('main-top');
+    } else {
+        main_strong.classList.add('main-top');
+    }
+    if (main_strong.classList.contains('main-bottom')) {
+    	main_strong.classList.remove('main-bottom');
+    } else {
+        main_strong.classList.add('main-bottom');
+    }
+    if (main_strong.classList.contains('main-center')) {
+    	main_strong.classList.remove('main-center');
+    } else {
+        main_strong.classList.add('main-center');
+    }
+
+    if(bul == false) {
+     gamburger.style.cssText = 'left:0;';
+     bul = true;
+    } else {
+     gamburger.style.cssText = 'left:-100%;';
+     bul = false;
+    }
+}
+
+
+function Gamburger(event) {
+    if (event.target !== nav && !nav.contains(event.target)) {
+        gamburger.style.left = '-100%';
+        bul = false;
+        main_strong.classList.remove('main-center');
+        main_strong.classList.remove('main-bottom');
+        main_strong.classList.remove('main-top');
+    }
+}
+
+gamburger.addEventListener('click', Gamburger);
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-    observer.observe();
+});
+
 </script>
-
-
   </body>
 </html>
